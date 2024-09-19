@@ -2,6 +2,7 @@
 
 //Pregunta 1:
 
+using System.Collections;
 using System.Security.Claims;
 
 double st = 0, e = 0, d = 0, v = 0, a = 0, s, sn;
@@ -48,8 +49,7 @@ Console.WriteLine(" ");
 Console.WriteLine("********** PROBLEMA 2 **********");
 
 int auto = 0, contador = 0, cv = 0, ca = 0, cr = 0;
-string color = "", fin = "";
-
+string color = "", f;
 
 while (auto >= 0)
 {
