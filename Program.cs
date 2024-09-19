@@ -47,14 +47,14 @@ Console.WriteLine(" ");
 //Pregunta 2:
 Console.WriteLine("********** PROBLEMA 2 **********");
 
-int contador = 0, cv = 0, ca = 0, cr = 0;
-string color = "";
-string auto = "";
+int auto = 0, contador = 0, cv = 0, ca = 0, cr = 0;
+string color = "", fin = "";
 
-while (auto != "F")
+
+while (auto >= 0)
 {
     Console.Write("Ingrese el último dígito de la placa (0-9): ");
-    auto = Convert.ToInt32(Console.ReadLine());
+    auto = int.Parse(Console.ReadLine());
 
     if (auto >= 0 && auto <= 3)
     {
@@ -77,6 +77,7 @@ while (auto != "F")
     Console.Write("Calcomania de color: " + color);
     Console.WriteLine(" ");
 }
+
 Console.WriteLine(" ");
 Console.WriteLine("Cantidad de autos verdes: " + cv);
 Console.WriteLine("Cantidad de autos azules: " + ca);
