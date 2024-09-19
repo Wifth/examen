@@ -45,28 +45,33 @@ Console.WriteLine(" ");
 Console.WriteLine(" ");
 ;
 
+
 //Pregunta 2:
 Console.WriteLine("********** PROBLEMA 2 **********");
 
-int auto = 0, contador = 0, cv = 0, ca = 0, cr = 0;
-string color = "", f;
+int nauto = 0, contador = 0, cv = 0, ca = 0, cr = 0;
+string color = "", auto = "";
 
-while (auto >= 0)
+Console.Write("Ingrese el último dígito de la placa (0-9): ");
+auto = Convert.ToString(Console.ReadLine());
+
+while (auto != "F")
 {
     Console.Write("Ingrese el último dígito de la placa (0-9): ");
-    auto = int.Parse(Console.ReadLine());
+    auto = Convert.ToString(Console.ReadLine());
+    nauto = Convert.ToInt16(auto);
 
-    if (auto >= 0 && auto <= 3)
+    if (nauto >= 0 && nauto <= 3)
     {
         color = "Verde";
         cv++;
     }
-    else if (auto >= 4 && auto <= 6)
+    else if (nauto >= 4 && nauto <= 6)
     {
         color = "Azul";
         ca++;
     }
-    else if (auto >= 7 && auto <= 9)
+    else if (nauto >= 7 && nauto <= 9)
     {
         color = "Rojo";
         cr++;
